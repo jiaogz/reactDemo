@@ -1,25 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+//项目的根组件
+import React, { Component } from 'react';
+// import './assets/css/App.css';
+
+import Todolist from './components/todolist/Todolist'
+
+
+//react基于组件化、模块化开发，JSX语法（html+js）
 class App extends Component {
   render() {
     return (
+      //  相当于引入HTML片段
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+
+          {/*引入Home组件*/}
+          {/*<Home/>*/}
+          {/*<Trans/>*/}
+          <Todolist/>
       </div>
     );
   }
